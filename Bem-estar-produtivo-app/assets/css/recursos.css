@@ -1,0 +1,536 @@
+/* ESTILOS GERAIS PARA RECURSOS */
+.tools-section {
+    margin: 3rem 0;
+}
+
+.tool-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tool-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.tool-btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.tool-btn:hover {
+    background: var(--primary-color);
+}
+
+/* PLANNER DIGITAL */
+.planner-section {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.planner-container {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.planner-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.planner-controls button {
+    background: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex: 1;
+    min-width: 150px;
+}
+
+.planner-controls button:hover {
+    background: #d6eaf8;
+}
+
+.planner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.planner-day {
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.planner-day h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.planner-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.planner-day textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.planner-stats {
+    background: #f0f7fc;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.stat-bars {
+    margin: 1.5rem 0;
+}
+
+.stat-bar {
+    margin-bottom: 1.5rem;
+}
+
+.stat-bar label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.stat-bar input[type="range"] {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+.stat-bar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.save-btn {
+    background: var(--success-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.save-btn:hover {
+    background: #219653;
+}
+
+/* CHECKLISTS */
+.checklists-section {
+    margin: 4rem 0;
+}
+
+.checklist-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--dark-color);
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.tab-btn:hover:not(.active) {
+    background: #f5f5f5;
+}
+
+.checklist {
+    display: none;
+}
+
+.checklist.active {
+    display: block;
+}
+
+.checklist h3 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 1rem;
+}
+
+.checklist-items {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.checklist-items li {
+    margin-bottom: 0.75rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.checklist-items input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.checklist-items label {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.checklist-items input[type="checkbox"]:checked + label {
+    color: #777;
+    text-decoration: line-through;
+}
+
+.checklist-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.save-checklist-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.save-checklist-btn:hover {
+    background: var(--primary-color);
+}
+
+.print-checklist-btn, .reset-checklist-btn {
+    background: white;
+    color: var(--dark-color);
+    border: 1px solid #ddd;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.print-checklist-btn:hover, .reset-checklist-btn:hover {
+    background: #f5f5f5;
+}
+
+/* CALCULADORA DE ROI */
+.calculator-section {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.calculator-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.calculator-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-form h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.calculate-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.calculate-btn:hover {
+    background: var(--primary-color);
+}
+
+.calculator-results {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item.total {
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 2px solid var(--secondary-color);
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.result-label {
+    color: var(--dark-color);
+}
+
+.result-value {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.roi-chart {
+    margin: 2rem 0;
+    height: 250px;
+}
+
+.roi-summary {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* BIBLIOTECA DE MÍDIA */
+.media-section {
+    margin: 4rem 0;
+}
+
+.media-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.media-tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--dark-color);
+    transition: all 0.3s;
+}
+
+.media-tab-btn.active {
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.media-tab-btn:hover:not(.active) {
+    background: #f5f5f5;
+}
+
+.media-list {
+    display: none;
+}
+
+.media-list.active {
+    display: block;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.video-list ul, .podcast-list ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.video-list li, .podcast-list li {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.video-list li:hover, .podcast-list li:hover {
+    background: #f5f5f5;
+}
+
+.podcast-player {
+    margin-bottom: 2rem;
+}
+
+.podcast-info {
+    margin: 1rem 0;
+}
+
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.download-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.download-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.download-card h4 {
+    margin: 0.5rem 0;
+}
+
+.download-btn {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: var(--primary-color);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .planner-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .checklist-actions {
+        flex-direction: column;
+    }
+    
+    .tab-btn, .media-tab-btn {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .downloads-grid {
+        grid-template-columns: 1fr;
+    }
+}

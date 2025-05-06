@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Interativos | Bem-Estar no Trabalho</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/recursos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Recursos Interativos</h1>
+            <p>Ferramentas práticas para aplicar imediatamente</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../../index.html">Introdução</a></li>
+            <li><a href="estrategias-profissionais.html">Para Profissionais</a></li>
+            <li><a href="estrategias-gestores.html">Para Gestores</a></li>
+            <li><a href="casos-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="recursos-interativos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="tools-section">
+            <h2><i class="fas fa-tools"></i> Ferramentas Práticas</h2>
+            
+            <div class="tool-cards">
+                <!-- Planner Digital -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Planner de Bem-Estar</h3>
+                    <p>Planeje sua semana equilibrando produtividade e autocuidado.</p>
+                    <a href="#planner" class="tool-btn">Acessar Planner</a>
+                </div>
+                
+                <!-- Checklists -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-check-square"></i>
+                    </div>
+                    <h3>Checklists Prontos</h3>
+                    <p>Listas verificáveis para implementar as estratégias.</p>
+                    <a href="#checklists" class="tool-btn">Ver Checklists</a>
+                </div>
+                
+                <!-- Calculadora de ROI -->
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Calculadora de ROI</h3>
+                    <p>Calcule o retorno do investimento em bem-estar corporativo.</p>
+                    <a href="#calculator" class="tool-btn">Calcular Agora</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Planner Digital -->
+        <section id="planner" class="planner-section">
+            <h2><i class="fas fa-calendar-week"></i> Planner Digital de Bem-Estar</h2>
+            
+            <div class="planner-container">
+                <div class="planner-controls">
+                    <button id="prev-week"><i class="fas fa-chevron-left"></i> Semana Anterior</button>
+                    <h3 id="planner-title">Semana de [Data]</h3>
+                    <button id="next-week">Próxima Semana <i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="planner-grid">
+                    <!-- Gerado dinamicamente via JavaScript -->
+                </div>
+                
+                <div class="planner-stats">
+                    <h4>Metas desta semana:</h4>
+                    <div class="stat-bars">
+                        <div class="stat-bar">
+                            <label>Trabalho Focado: <span id="focus-hours">25</span>h</label>
+                            <input type="range" id="focus-range" min="0" max="40" value="25">
+                        </div>
+                        <div class="stat-bar">
+                            <label>Autocuidado: <span id="care-hours">10</span>h</label>
+                            <input type="range" id="care-range" min="0" max="20" value="10">
+                        </div>
+                        <div class="stat-bar">
+                            <label>Aprendizado: <span id="learn-hours">5</span>h</label>
+                            <input type="range" id="learn-range" min="0" max="15" value="5">
+                        </div>
+                    </div>
+                    <button id="save-planner" class="save-btn"><i class="fas fa-save"></i> Salvar Planner</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Checklists -->
+        <section id="checklists" class="checklists-section">
+            <h2><i class="fas fa-tasks"></i> Checklists Prontos para Uso</h2>
+            
+            <div class="checklist-tabs">
+                <button class="tab-btn active" data-tab="professional">Para Profissionais</button>
+                <button class="tab-btn" data-tab="manager">Para Gestores</button>
+                <button class="tab-btn" data-tab="team">Para Equipes</button>
+            </div>
+            
+            <div class="checklist-content">
+                <!-- Checklist Profissionais -->
+                <div id="professional-checklist" class="checklist active">
+                    <h3>Rotina Diária de Bem-Estar</h3>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="p1">
+                            <label for="p1">Alongamento matinal (5 minutos)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p2">
+                            <label for="p2">Definir 3 prioridades do dia</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p3">
+                            <label for="p3">Fazer pausas a cada 90 minutos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p4">
+                            <label for="p4">Praticar técnica de respiração</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p5">
+                            <label for="p5">Desconectar-se 1h antes de dormir</label>
+                        </li>
+                    </ul>
+                    
+                    <h3>Gestão do Tempo</h3>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="p6">
+                            <label for="p6">Usar técnica Pomodoro</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p7">
+                            <label for="p7">Revisar matriz Eisenhower</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p8">
+                            <label for="p8">Delegar 1 tarefa</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="p9">
+                            <label for="p9">Dizer "não" a 1 demanda não essencial</label>
+                        </li>
+                    </ul>
+                    
+                    <div class="checklist-actions">
+                        <button class="save-checklist-btn"><i class="fas fa-save"></i> Salvar Progresso</button>
+                        <button class="print-checklist-btn"><i class="fas fa-print"></i> Imprimir</button>
+                        <button class="reset-checklist-btn"><i class="fas fa-redo"></i> Reiniciar</button>
+                    </div>
+                </div>
+                
+                <!-- Checklist Gestores -->
+                <div id="manager-checklist" class="checklist">
+                    <h3>Liderança Saudável</h3>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="m1">
+                            <label for="m1">Dar feedback positivo para 3 colaboradores</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="m2">
+                            <label for="m2">Reunião individual com um membro da equipe</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="m3">
+                            <label for="m3">Avaliar cargas de trabalho da equipe</label>
+                        </li>
+                    </ul>
+                    
+                    <div class="checklist-actions">
+                        <button class="save-checklist-btn"><i class="fas fa-save"></i> Salvar Progresso</button>
+                        <button class="print-checklist-btn"><i class="fas fa-print"></i> Imprimir</button>
+                        <button class="reset-checklist-btn"><i class="fas fa-redo"></i> Reiniciar</button>
+                    </div>
+                </div>
+                
+                <!-- Checklist Equipes -->
+                <div id="team-checklist" class="checklist">
+                    <h3>Dinâmicas de Equipe</h3>
+                    <ul class="checklist-items">
+                        <li>
+                            <input type="checkbox" id="t1">
+                            <label for="t1">Realizar retrospectiva semanal</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t2">
+                            <label for="t2">Celebrar pequenas conquistas</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t3">
+                            <label for="t3">Atividade de team building</label>
+                        </li>
+                    </ul>
+                    
+                    <div class="checklist-actions">
+                        <button class="save-checklist-btn"><i class="fas fa-save"></i> Salvar Progresso</button>
+                        <button class="print-checklist-btn"><i class="fas fa-print"></i> Imprimir</button>
+                        <button class="reset-checklist-btn"><i class="fas fa-redo"></i> Reiniciar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Calculadora de ROI -->
+        <section id="calculator" class="calculator-section">
+            <h2><i class="fas fa-chart-line"></i> Calculadora de ROI do Bem-Estar</h2>
+            
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <h3>Dados da Organização</h3>
+                    <div class="form-group">
+                        <label for="employees">Número de Funcionários:</label>
+                        <input type="number" id="employees" min="1" value="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="turnover">Taxa de Rotatividade Atual (%):</label>
+                        <input type="number" id="turnover" min="0" max="100" value="15" step="0.1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="absenteeism">Dias de Absenteísmo por Ano/Func.:</label>
+                        <input type="number" id="absenteeism" min="0" value="5" step="0.5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="salary">Salário Médio Anual (R$):</label>
+                        <input type="number" id="salary" min="0" value="60000">
+                    </div>
+                    
+                    <h3>Impacto Esperado</h3>
+                    <div class="form-group">
+                        <label for="turnover-reduction">Redução na Rotatividade (%):</label>
+                        <input type="number" id="turnover-reduction" min="0" max="100" value="25" step="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="absenteeism-reduction">Redução no Absenteísmo (%):</label>
+                        <input type="number" id="absenteeism-reduction" min="0" max="100" value="30" step="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="productivity-gain">Ganho de Produtividade (%):</label>
+                        <input type="number" id="productivity-gain" min="0" max="100" value="15" step="1">
+                    </div>
+                    
+                    <button id="calculate-roi" class="calculate-btn"><i class="fas fa-calculator"></i> Calcular ROI</button>
+                </div>
+                
+                <div class="calculator-results">
+                    <h3>Resultados Estimados</h3>
+                    <div class="result-item">
+                        <span class="result-label">Redução na Rotatividade:</span>
+                        <span class="result-value" id="turnover-savings">R$ 0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Redução no Absenteísmo:</span>
+                        <span class="result-value" id="absenteeism-savings">R$ 0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Aumento de Produtividade:</span>
+                        <span class="result-value" id="productivity-value">R$ 0</span>
+                    </div>
+                    <div class="result-item total">
+                        <span class="result-label">Ganho Anual Total:</span>
+                        <span class="result-value" id="total-savings">R$ 0</span>
+                    </div>
+                    
+                    <div class="roi-chart">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                    
+                    <div class="roi-summary">
+                        <h4>Resumo do Investimento</h4>
+                        <p id="roi-summary-text">Preencha os dados e clique em "Calcular ROI" para ver os resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Biblioteca de Mídia -->
+        <section class="media-section">
+            <h2><i class="fas fa-photo-video"></i> Biblioteca de Mídia</h2>
+            
+            <div class="media-tabs">
+                <button class="media-tab-btn active" data-media="videos">Vídeos</button>
+                <button class="media-tab-btn" data-media="downloads">Material para Download</button>
+            </div>
+            
+            <div class="media-content">
+                <!-- Conteúdo de Vídeos -->
+                <div id="videos-media" class="media-list active">
+                    <div class="media-player">
+                        <h3>Mindfulness no Trabalho</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mLOCYir6bnI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-list">
+                            <h4>Mais Vídeos:</h4>
+                            <ul>
+                                <li data-video-id="mLOCYir6bnI">Introdução ao Mindfulness</li>
+                                <li data-video-id="mRHKtDZZiWQ">Técnicas de Respiração</li>
+                                <li data-video-id="PzUZsoyMXuY">Gestão do Tempo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Material para Download -->
+                <div id="downloads-media" class="media-list">
+                    <div class="downloads-grid">
+                        <div class="download-card">
+                            <i class="fas fa-file-pdf"></i>
+                            <h4>Guia de Mindfulness</h4>
+                            <p>PDF - 2.4 MB</p>
+                            <a href="../media/guia-mindfulness.pdf" download class="download-btn">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Guia Prático Digital para Bem-Estar e Produtividade no Trabalho</p>
+        <p>© 2023 Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/recursos.js"></script>
+</body>
+</html>

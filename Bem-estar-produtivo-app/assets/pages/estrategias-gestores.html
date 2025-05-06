@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégias para Gestores | Bem-Estar no Trabalho</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/estrategias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Estratégias para Gestores</h1>
+            <p>Construindo ambientes de trabalho produtivos e saudáveis</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../../index.html">Introdução</a></li>
+            <li><a href="estrategias-profissionais.html">Para Profissionais</a></li>
+            <li><a href="estrategias-gestores.html">Para Gestores</a></li>
+            <li><a href="casos-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="recursos-interativos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="strategy-intro">
+            <h2>O Papel do Gestor no Bem-Estar Organizacional</h2>
+            <p>Pesquisas mostram que <strong>70% da variação no engajamento das equipes</strong> está diretamente relacionada às ações dos gestores. Este guia apresenta estratégias baseadas em evidências científicas para você liderar com excelência.</p>
+            
+            <div class="manager-impact-grid">
+                <div class="impact-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>+25%</h3>
+                    <p>Produtividade em equipes com gestores que praticam feedback positivo</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>-40%</h3>
+                    <p>Redução no estresse quando há reconhecimento frequente</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-users"></i>
+                    <h3>3x</h3>
+                    <p>Mais inovação em ambientes psicologicamente seguros</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="strategy-section">
+            <h2><i class="fas fa-award"></i> Cultura de Reconhecimento</h2>
+            
+            <div class="strategy-card">
+                <h3>O Poder do Reconhecimento Eficaz</h3>
+                <p>Funcionários reconhecidos são <strong>5x mais propensos</strong> a permanecer na empresa. Veja como fazer corretamente:</p>
+                
+                <div class="recognition-types">
+                    <div class="recognition-card">
+                        <h4>Reconhecimento Público</h4>
+                        <ul>
+                            <li>Destaque em reuniões de equipe</li>
+                            <li>Murais de reconhecimento</li>
+                            <li>Newsletters internas</li>
+                        </ul>
+                        <button class="recognition-example-btn">Ver Exemplo</button>
+                    </div>
+                    <div class="recognition-card">
+                        <h4>Reconhecimento Privado</h4>
+                        <ul>
+                            <li>Notas manuscritas</li>
+                            <li>Conversas individuais</li>
+                            <li>Feedback personalizado</li>
+                        </ul>
+                        <button class="recognition-example-btn">Ver Exemplo</button>
+                    </div>
+                </div>
+                
+                <div class="feedback-tool">
+                    <h4>Gerador de Feedback Eficaz</h4>
+                    <div class="feedback-form">
+                        <div class="form-group">
+                            <label for="employee-name">Nome do Colaborador:</label>
+                            <input type="text" id="employee-name" placeholder="Ex: Maria Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="achievement">Conquista/Comportamento:</label>
+                            <input type="text" id="achievement" placeholder="Ex: Entrega do projeto X antes do prazo">
+                        </div>
+                        <div class="form-group">
+                            <label for="impact">Impacto Positivo:</label>
+                            <input type="text" id="impact" placeholder="Ex: Cliente ficou extremamente satisfeito">
+                        </div>
+                        <button id="generate-feedback" class="generate-btn">Gerar Feedback</button>
+                    </div>
+                    <div class="feedback-result">
+                        <h5>Seu Feedback de Reconhecimento:</h5>
+                        <div id="feedback-output" class="feedback-text">
+                            <!-- O feedback gerado aparecerá aqui -->
+                        </div>
+                        <button id="copy-feedback" class="copy-btn"><i class="far fa-copy"></i> Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="strategy-section">
+            <h2><i class="fas fa-comments"></i> Comunicação e Feedback</h2>
+            
+            <div class="strategy-card">
+                <h3>Técnica SBI para Feedback Construtivo</h3>
+                <p>Estrutura cientificamente validada para feedbacks eficazes:</p>
+                
+                <div class="sbi-grid">
+                    <div class="sbi-card">
+                        <div class="sbi-letter">S</div>
+                        <h4>Situação</h4>
+                        <p>Contexto específico e observável</p>
+                        <input type="text" class="sbi-input" placeholder="Ex: Na reunião com o cliente na terça...">
+                    </div>
+                    <div class="sbi-card">
+                        <div class="sbi-letter">B</div>
+                        <h4>Comportamento</h4>
+                        <p>Ação ou comportamento observável</p>
+                        <input type="text" class="sbi-input" placeholder="Ex: você apresentou os dados de forma clara...">
+                    </div>
+                    <div class="sbi-card">
+                        <div class="sbi-letter">I</div>
+                        <h4>Impacto</h4>
+                        <p>Efeito positivo ou negativo</p>
+                        <input type="text" class="sbi-input" placeholder="Ex: o cliente confirmou o contrato no local">
+                    </div>
+                </div>
+                
+                <button id="compile-sbi" class="sbi-compile-btn">Montar Feedback Completo</button>
+                <div id="sbi-result" class="sbi-result">
+                    <!-- Resultado do feedback SBI aparecerá aqui -->
+                </div>
+            </div>
+            
+            <div class="strategy-card">
+                <h3>Checklist: Reuniões Eficazes</h3>
+                <div class="meeting-checklist">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="m1">
+                        <label for="m1">Definir agenda clara com antecedência</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="m2">
+                        <label for="m2">Limitar duração (máx. 50min)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="m3">
+                        <label for="m3">Envolver todos os participantes</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="m4">
+                        <label for="m4">Documentar ações e responsáveis</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="m5">
+                        <label for="m5">Reservar 5min para feedback da reunião</label>
+                    </div>
+                </div>
+                <button id="save-checklist" class="save-checklist-btn"><i class="fas fa-save"></i> Salvar Checklist</button>
+            </div>
+        </section>
+
+        <section class="strategy-section">
+            <h2><i class="fas fa-chart-pie"></i> Ferramentas de Análise</h2>
+            
+            <div class="strategy-card">
+                <h3>Diagnóstico de Saúde da Equipe</h3>
+                <p>Avalie estes indicadores mensalmente em uma escala de 1-10:</p>
+                
+                <div class="health-metrics">
+                    <div class="metric-item">
+                        <label for="engagement">Engajamento:</label>
+                        <input type="range" id="engagement" min="1" max="10" value="5">
+                        <span class="metric-value">5</span>
+                    </div>
+                    <div class="metric-item">
+                        <label for="clarity">Clareza de Expectativas:</label>
+                        <input type="range" id="clarity" min="1" max="10" value="5">
+                        <span class="metric-value">5</span>
+                    </div>
+                    <div class="metric-item">
+                        <label for="balance">Equilíbrio Vida-Trabalho:</label>
+                        <input type="range" id="balance" min="1" max="10" value="5">
+                        <span class="metric-value">5</span>
+                    </div>
+                    <div class="metric-item">
+                        <label for="growth">Oportunidades de Crescimento:</label>
+                        <input type="range" id="growth" min="1" max="10" value="5">
+                        <span class="metric-value">5</span>
+                    </div>
+                </div>
+                
+                <button id="generate-metrics" class="metrics-btn">Gerar Relatório</button>
+                <div id="metrics-report" style="display: none;">
+                    <div class="metrics-chart">
+                        <canvas id="teamHealthChart"></canvas>
+                    </div>
+                    <div id="metrics-analysis" style="margin-top: 20px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-plan">
+            <h2><i class="fas fa-clipboard-list"></i> Plano de Ação Personalizado</h2>
+            
+            <div class="plan-steps">
+                <div class="plan-step">
+                    <h3>1. Priorize 3 Estratégias</h3>
+                    <select id="strategy-select" multiple>
+                        <option value="recognition">Implementar programa de reconhecimento</option>
+                        <option value="feedback">Treinar equipe em feedback SBI</option>
+                        <option value="meetings">Otimizar reuniões</option>
+                        <option value="wellness">Criar comitê de bem-estar</option>
+                        <option value="flexibility">Oferecer opções de trabalho flexível</option>
+                    </select>
+                </div>
+                
+                <div class="plan-step">
+                    <h3>2. Defina Prazos</h3>
+                    <div class="deadline-picker">
+                        <label for="start-date">Início:</label>
+                        <input type="date" id="start-date">
+                        
+                        <label for="end-date">Conclusão:</label>
+                        <input type="date" id="end-date">
+                    </div>
+                </div>
+                
+                <div class="plan-step">
+                    <h3>3. Comprometa-se</h3>
+                    <textarea id="commitment" placeholder="Escreva seu compromisso pessoal com estas ações..."></textarea>
+                    <button id="save-plan" class="commit-btn">Salvar Plano</button>
+                    <button class="view-plan-btn">Visualizar Planos Salvos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Guia Prático Digital para Bem-Estar e Produtividade no Trabalho</p>
+        <p>© 2023 Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal para Planos Salvos -->
+    <div class="plan-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Planos de Ação Salvos</h3>
+            <div id="saved-plans-list"></div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/gestores.js"></script>
+</body>
+</html>

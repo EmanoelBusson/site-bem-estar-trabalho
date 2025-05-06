@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos de Sucesso | Bem-Estar no Trabalho</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/casos.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Casos de Sucesso</h1>
+            <p>Empresas que transformaram sua cultura organizacional</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../../index.html">Introdução</a></li>
+            <li><a href="estrategias-profissionais.html">Para Profissionais</a></li>
+            <li><a href="estrategias-gestores.html">Para Gestores</a></li>
+            <li><a href="casos-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="recursos-interativos.html">Recursos</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="case-studies">
+            <div class="case-filter">
+                <h2>Filtrar por:</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="tech">Tecnologia</button>
+                    <button class="filter-btn" data-filter="financeiro">Financeiro</button>
+                    <button class="filter-btn" data-filter="saude">Saúde</button>
+                </div>
+            </div>
+
+            <div class="case-grid">
+                <!-- Caso 1 - Google -->
+                <div class="case-card" data-category="tech">
+                    <div class="case-header">
+                        <img src="../images/google-campus.jpg" alt="Google Campus">
+                        <h3>Google - Project Aristotle</h3>
+                    </div>
+                    <div class="case-body">
+                        <p><strong>Desafio:</strong> Entender por que algumas equipes performavam melhor que outras.</p>
+                        <p><strong>Solução:</strong> Identificaram que <strong>segurança psicológica</strong> era o fator mais importante para times de sucesso.</p>
+                        <p><strong>Resultado:</strong> 56% mais inovação e 27% menos rotatividade nas equipes com alta segurança psicológica.</p>
+                        <button class="case-details-btn">Ver Detalhes</button>
+                        <div class="case-details">
+                            <p>O Google investiu em:</p>
+                            <ul>
+                                <li>Treinamento de líderes em inteligência emocional</li>
+                                <li>Programas de feedback 360°</li>
+                                <li>Ambientes que promovem vulnerabilidade e abertura</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 2 - Zappos -->
+                <div class="case-card" data-category="tech">
+                    <div class="case-header">
+                        <img src="../images/Zappos.png" alt="Escritório da Zappos">
+                        <h3>Zappos - Cultura de Felicidade</h3>
+                    </div>
+                    <div class="case-body">
+                        <p><strong>Desafio:</strong> Manter a cultura organizacional durante crescimento acelerado.</p>
+                        <p><strong>Solução:</strong> Implementaram um sistema holocrático e ofereceram <strong>$4,000 para quem quisesse sair</strong> caso não se identificasse com os valores.</p>
+                        <p><strong>Resultado:</strong> 85% dos funcionários relatam alto engajamento e satisfação.</p>
+                        <button class="case-details-btn">Ver Detalhes</button>
+                        <div class="case-details">
+                            <p>Princípios chave:</p>
+                            <ol>
+                                <li>"Deliver WOW Through Service"</li>
+                                <li>"Embrace and Drive Change"</li>
+                                <li>"Create Fun and A Little Weirdness"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 3 - Banco Santander -->
+                <div class="case-card" data-category="financeiro">
+                    <div class="case-header">
+                        <img src="../images/santander.png" alt="Banco Santander">
+                        <h3>Santander - Programa de Bem-Estar</h3>
+                    </div>
+                    <div class="case-body">
+                        <p><strong>Desafio:</strong> Altos níveis de estresse no setor financeiro.</p>
+                        <p><strong>Solução:</strong> Programa "Mente Saudável" com mindfulness e flexibilidade.</p>
+                        <p><strong>Resultado:</strong> 30% redução em afastamentos por saúde mental em 2 anos.</p>
+                        <button class="case-details-btn">Ver Detalhes</button>
+                        <div class="case-details">
+                            <p>Iniciativas implementadas:</p>
+                            <ul>
+                                <li>Meditação guiada diária</li>
+                                <li>Horários flexíveis</li>
+                                <li>Terapia online gratuita</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-form">
+            <h2>Compartilhe Seu Caso</h2>
+            <form id="caseStudyForm">
+                <div class="form-group">
+                    <label for="company-name">Nome da Empresa:</label>
+                    <input type="text" id="company-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company-sector">Setor:</label>
+                    <select id="company-sector" required>
+                        <option value="">Selecione...</option>
+                        <option value="tech">Tecnologia</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="saude">Saúde</option>
+                        <option value="educacao">Educação</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="case-description">Descreva a iniciativa de bem-estar:</label>
+                    <textarea id="case-description" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="case-results">Resultados alcançados:</label>
+                    <textarea id="case-results" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-case-btn">Enviar Caso</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Guia Prático Digital para Bem-Estar e Produtividade no Trabalho</p>
+        <p>© 2023 Todos os direitos reservados</p>
+    </footer>
+
+    <script src="..js/main.js"></script>
+    <script src="..js/casos.js"></script>
+</body>
+</html>
